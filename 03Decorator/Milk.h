@@ -12,6 +12,8 @@ namespace decorator
     public:
         explicit Milk(const std::shared_ptr<Beverage>& newBeverage);
 
+        ~Milk() override = default;
+
         double cost() override;
 
         std::string getDescription() const override;

@@ -27,6 +27,5 @@ namespace observer
         void update(ISubject* subject) override;
 
         explicit StatisticsDisplay(std::shared_ptr<ISubject> newWeatherData);
-
     };
 }

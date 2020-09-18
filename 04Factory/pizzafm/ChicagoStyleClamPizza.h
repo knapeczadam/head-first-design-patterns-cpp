@@ -9,6 +9,8 @@ namespace factory::pizzafm
     public:
         ChicagoStyleClamPizza();
 
+        ~ChicagoStyleClamPizza() override = default;
+
         void cut() override;
     };
 }

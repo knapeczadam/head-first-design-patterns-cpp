@@ -8,5 +8,7 @@ namespace factory::pizzas
     {
     public:
         ClamPizza();
+
+        ~ClamPizza() override = default;
     };
 }

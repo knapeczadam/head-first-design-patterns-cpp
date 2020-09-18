@@ -28,4 +28,9 @@ namespace strategy
     {
         std::cout << "All ducks float, even decoys!" << '\n';
     }
+
+    Duck::~Duck()
+    {
+
+    }
 }

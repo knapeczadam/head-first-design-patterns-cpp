@@ -9,6 +9,8 @@ namespace decorator
     public:
         Espresso();
 
+        ~Espresso() override = default;
+
         double cost() override;
     };
 }

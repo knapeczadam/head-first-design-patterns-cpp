@@ -8,5 +8,7 @@ namespace factory::pizzafm
     {
     public:
         NYStylePepperoniPizza();
+
+        ~NYStylePepperoniPizza() override = default;
     };
 }

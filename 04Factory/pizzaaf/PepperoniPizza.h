@@ -12,7 +12,9 @@ namespace factory::pizzaaf
         std::shared_ptr<IPizzaIngredientFactory> ingredientFactory = nullptr;
 
     public:
-        PepperoniPizza(std::shared_ptr<IPizzaIngredientFactory> newIngredientFactory);
+        explicit PepperoniPizza(std::shared_ptr<IPizzaIngredientFactory> newIngredientFactory);
+
+        ~PepperoniPizza() override = default;
 
         void prepare() override;
     };

@@ -27,6 +27,6 @@ namespace decorator
 
         void setSize(EBeverageSize newSize);
 
-        virtual ~Beverage() = default;
+        virtual ~Beverage() = 0;
     };
 }

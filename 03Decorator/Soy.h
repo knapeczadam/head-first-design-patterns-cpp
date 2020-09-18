@@ -12,6 +12,8 @@ namespace decorator
     public:
         explicit Soy(const std::shared_ptr<Beverage>& newBeverage);
 
+        ~Soy() override = default;
+
         double cost() override;
 
         std::string getDescription() const override;

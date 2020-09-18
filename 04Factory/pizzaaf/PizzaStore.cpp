@@ -14,4 +14,9 @@ namespace factory::pizzaaf
         pizza->box();
         return pizza;
     }
+
+    PizzaStore::~PizzaStore()
+    {
+
+    }
 }

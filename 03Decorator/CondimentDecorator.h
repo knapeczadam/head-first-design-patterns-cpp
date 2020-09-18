@@ -16,5 +16,7 @@ namespace decorator
         std::string getDescription() const override = 0;
 
         EBeverageSize getSize() const override;
+
+        virtual ~CondimentDecorator() = 0;
     };
 }

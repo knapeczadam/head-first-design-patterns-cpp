@@ -7,7 +7,7 @@ namespace factory::pizzaaf
     class IClams
     {
     public:
-        virtual ~IClams() = 0;
+        virtual ~IClams() = default;
 
         virtual void toString(std::ostream& os) const = 0;
 

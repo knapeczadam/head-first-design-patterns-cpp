@@ -6,4 +6,9 @@ namespace decorator
     {
         return beverage->getSize();
     }
+
+    CondimentDecorator::~CondimentDecorator()
+    {
+
+    }
 }

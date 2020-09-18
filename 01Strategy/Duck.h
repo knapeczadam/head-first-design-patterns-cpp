@@ -27,6 +27,6 @@ namespace strategy
 
         void swim() const;
 
-        virtual ~Duck() = default;
+        virtual ~Duck() = 0;
     };
 }

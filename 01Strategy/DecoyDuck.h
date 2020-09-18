@@ -9,6 +9,8 @@ namespace strategy
     public:
         DecoyDuck();
 
+        ~DecoyDuck() override = default;
+
         void display() const override;
     };
 }

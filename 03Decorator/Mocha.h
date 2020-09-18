@@ -12,6 +12,8 @@ namespace decorator
     public:
         explicit Mocha(const std::shared_ptr<Beverage>& newBeverage);
 
+        ~Mocha() override = default;
+
         double cost() override;
 
         std::string getDescription() const override;

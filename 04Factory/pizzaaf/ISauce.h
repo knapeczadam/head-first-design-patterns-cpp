@@ -7,7 +7,7 @@ namespace factory::pizzaaf
     class ISauce
     {
     public:
-        virtual ~ISauce() = 0;
+        virtual ~ISauce() = default;
 
         virtual void toString(std::ostream& os) const = 0;
 

@@ -10,6 +10,8 @@ namespace strategy
         void display() const override;
 
         MallardDuck();
+
+        ~MallardDuck() override = default;
     };
 }
 

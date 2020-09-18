@@ -8,5 +8,8 @@ namespace factory::pizzaaf
     {
     protected:
         std::shared_ptr<Pizza> createPizza(const std::string& item) override;
+
+    public:
+        ~NYPizzaStore() override = default;
     };
 }

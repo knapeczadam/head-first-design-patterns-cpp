@@ -12,6 +12,8 @@ namespace decorator
     public:
         explicit Whip(const std::shared_ptr<Beverage>& newBeverage);
 
+        ~Whip() override = default;
+
         double cost() override;
 
         std::string getDescription() const override;

@@ -7,7 +7,7 @@ namespace factory::pizzaaf
     class IPepperoni
     {
     public:
-        virtual ~IPepperoni() = 0;
+        virtual ~IPepperoni() = default;
 
         virtual void toString(std::ostream& os) const = 0;
 

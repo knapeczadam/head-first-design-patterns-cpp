@@ -8,5 +8,7 @@ namespace factory::pizzas
     {
     public:
         VeggiePizza();
+
+        ~VeggiePizza() override = default;
     };
 }

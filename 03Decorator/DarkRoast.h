@@ -9,6 +9,8 @@ namespace decorator
     public:
         DarkRoast();
 
+        ~DarkRoast() override = default;
+
         double cost() override;
     };
 }

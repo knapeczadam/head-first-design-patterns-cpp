@@ -7,7 +7,7 @@ namespace factory::pizzaaf
     class ICheese
     {
     public:
-        virtual ~ICheese() = 0;
+        virtual ~ICheese() = default;
 
         virtual void toString(std::ostream& os) const = 0;
 

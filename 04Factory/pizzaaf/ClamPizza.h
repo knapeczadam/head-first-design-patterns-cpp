@@ -11,10 +11,11 @@ namespace factory::pizzaaf
     {
         std::shared_ptr<IPizzaIngredientFactory> ingredientFactory = nullptr;
 
-    protected:
-        void prepare() override;
-
     public:
         explicit ClamPizza(std::shared_ptr<IPizzaIngredientFactory> newIngredientFactory);
+
+        ~ClamPizza() override = default;
+
+        void prepare() override;
     };
 }

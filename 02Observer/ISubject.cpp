@@ -28,9 +28,4 @@ namespace observer
     {
         changed = true;
     }
-
-    ISubject::~ISubject()
-    {
-
-    }
 }

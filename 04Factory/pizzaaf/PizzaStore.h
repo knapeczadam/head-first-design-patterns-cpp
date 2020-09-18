@@ -14,5 +14,7 @@ namespace factory::pizzaaf
 
     public:
         std::shared_ptr<Pizza> orderPizza(const std::string& type);
+
+        virtual ~PizzaStore() = 0;
     };
 }

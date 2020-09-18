@@ -8,5 +8,7 @@ namespace factory::pizzas
     {
     public:
         PepperoniPizza();
+
+        ~PepperoniPizza() override = default;
     };
 }

@@ -15,7 +15,7 @@ namespace factory::pizzaaf
     class IPizzaIngredientFactory
     {
     public:
-        virtual ~IPizzaIngredientFactory() = 0;
+        virtual ~IPizzaIngredientFactory() = default;
 
         virtual std::shared_ptr<IDough> createDough() = 0;
 

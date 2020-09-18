@@ -8,5 +8,7 @@ namespace factory::pizzas
     {
     public:
         CheesePizza();
+
+        ~CheesePizza() override = default;
     };
 }

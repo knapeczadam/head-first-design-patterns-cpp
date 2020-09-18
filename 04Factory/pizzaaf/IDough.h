@@ -7,7 +7,7 @@ namespace factory::pizzaaf
     class IDough
     {
     public:
-        virtual ~IDough() = 0;
+        virtual ~IDough() = default;
 
         virtual void toString(std::ostream& os) const = 0;
 

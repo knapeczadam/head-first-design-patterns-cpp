@@ -10,5 +10,7 @@ namespace strategy
         void display() const override;
 
         RedHeadDuck();
+
+        ~RedHeadDuck() override = default;
     };
 }

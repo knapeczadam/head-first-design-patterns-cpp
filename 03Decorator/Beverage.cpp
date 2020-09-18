@@ -16,4 +16,9 @@ namespace decorator
     {
         size = newSize;
     }
+
+    Beverage::~Beverage()
+    {
+
+    }
 }

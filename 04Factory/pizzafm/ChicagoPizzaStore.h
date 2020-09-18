@@ -10,5 +10,7 @@ namespace factory::pizzafm
     {
     public:
         std::shared_ptr<Pizza> createPizza(const std::string& item) override;
+
+        ~ChicagoPizzaStore() override = default;
     };
 }

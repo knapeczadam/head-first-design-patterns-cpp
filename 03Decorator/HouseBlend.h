@@ -9,6 +9,8 @@ namespace decorator
     public:
         HouseBlend();
 
+        ~HouseBlend() override = default;
+
         double cost() override;
     };
 }

@@ -24,6 +24,6 @@ namespace observer
 
         void setChanged();
 
-        virtual ~ISubject() = 0;
+        virtual ~ISubject() = default;
     };
 }

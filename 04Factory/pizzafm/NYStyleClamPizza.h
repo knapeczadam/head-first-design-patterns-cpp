@@ -8,5 +8,7 @@ namespace factory::pizzafm
     {
     public:
         NYStyleClamPizza();
+
+        ~NYStyleClamPizza() override = default;
     };
 }
