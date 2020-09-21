@@ -14,7 +14,7 @@ namespace command::party
 
         std::array<std::shared_ptr<ICommand>, 7> offCommands;
 
-        std::shared_ptr<ICommand> undoCommand;
+        std::shared_ptr<ICommand> undoCommand = nullptr;
 
     public:
         RemoteControl();

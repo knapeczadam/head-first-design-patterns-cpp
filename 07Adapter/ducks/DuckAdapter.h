@@ -9,7 +9,7 @@ namespace adapter::ducks
 {
     class DuckAdapter : public ITurkey
     {
-        std::shared_ptr<IDuck> duck;
+        std::shared_ptr<IDuck> duck = nullptr;
 
     public:
         explicit DuckAdapter(std::shared_ptr<IDuck> newDuck);

@@ -9,7 +9,7 @@ namespace command::party
 {
     class TVOffCommand : public ICommand
     {
-        std::shared_ptr<TV> tv;
+        std::shared_ptr<TV> tv = nullptr;
 
     public:
         explicit TVOffCommand(std::shared_ptr<TV> newTv);

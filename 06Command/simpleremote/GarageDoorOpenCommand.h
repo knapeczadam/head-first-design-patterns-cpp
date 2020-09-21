@@ -9,7 +9,7 @@ namespace command::simpleremote
 {
     class GarageDoorOpenCommand : public ICommand
     {
-        std::shared_ptr<GarageDoor> garageDoor;
+        std::shared_ptr<GarageDoor> garageDoor = nullptr;
 
     public:
         explicit GarageDoorOpenCommand(std::shared_ptr<GarageDoor> newGarageDoor);

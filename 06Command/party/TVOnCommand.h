@@ -9,7 +9,7 @@ namespace command::party
 {
     class TVOnCommand : public ICommand
     {
-        std::shared_ptr<TV> tv;
+        std::shared_ptr<TV> tv = nullptr;
 
     public:
         explicit TVOnCommand(std::shared_ptr<TV> newTv);

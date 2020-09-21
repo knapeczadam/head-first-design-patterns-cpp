@@ -9,7 +9,7 @@ namespace adapter::challenge
 {
     class DroneAdapter : public ducks::IDuck
     {
-        std::shared_ptr<IDrone> drone;
+        std::shared_ptr<IDrone> drone = nullptr;
 
     public:
         explicit DroneAdapter(std::shared_ptr<IDrone> newDrone);

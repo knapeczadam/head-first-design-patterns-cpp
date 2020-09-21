@@ -9,7 +9,7 @@ namespace command::undo
 {
     class LightOffCommand : public ICommand
     {
-        std::shared_ptr<Light> light;
+        std::shared_ptr<Light> light = nullptr;
 
         unsigned int level = 0;
 

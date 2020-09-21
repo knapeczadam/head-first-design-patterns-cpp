@@ -9,7 +9,7 @@ namespace adapter::ducks
 {
     class TurkeyAdapter : public IDuck
     {
-        std::shared_ptr<ITurkey> turkey;
+        std::shared_ptr<ITurkey> turkey = nullptr;
 
     public:
         explicit TurkeyAdapter(std::shared_ptr<ITurkey> newTurkey);

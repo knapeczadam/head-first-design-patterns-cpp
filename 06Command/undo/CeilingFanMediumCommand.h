@@ -9,7 +9,7 @@ namespace command::undo
 {
     class CeilingFanMediumCommand : public ICommand
     {
-        std::shared_ptr<CeilingFan> ceilingFan;
+        std::shared_ptr<CeilingFan> ceilingFan = nullptr;
 
         unsigned char prevSpeed = CeilingFan::OFF;
 

@@ -9,7 +9,7 @@ namespace command::simpleremote
 {
     class LightOnCommand : public ICommand
     {
-        std::shared_ptr<Light> light;
+        std::shared_ptr<Light> light = nullptr;
 
     public:
         explicit LightOnCommand(std::shared_ptr<Light> newLight);

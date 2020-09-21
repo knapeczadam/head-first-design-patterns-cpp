@@ -9,7 +9,7 @@ namespace command::remote
 {
     class StereoOffCommand : public ICommand
     {
-        std::shared_ptr<Stereo> stereo;
+        std::shared_ptr<Stereo> stereo = nullptr;
 
     public:
         explicit StereoOffCommand(std::shared_ptr<Stereo> newStereo);

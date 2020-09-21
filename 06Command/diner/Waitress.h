@@ -7,7 +7,7 @@ namespace command::diner
 {
     class Waitress
     {
-        std::shared_ptr<IOrder> order;
+        std::shared_ptr<IOrder> order = nullptr;
 
     public:
         void takeOrder(const std::shared_ptr<IOrder> newOrder);

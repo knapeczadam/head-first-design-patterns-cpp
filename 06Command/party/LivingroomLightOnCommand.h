@@ -9,7 +9,7 @@ namespace command::party
 {
     class LivingroomLightOnCommand : public ICommand
     {
-        std::shared_ptr<Light> light;
+        std::shared_ptr<Light> light = nullptr;
 
     public:
         explicit LivingroomLightOnCommand(std::shared_ptr<Light> newLight);

@@ -9,7 +9,7 @@ namespace command::remote
 {
     class CeilingFanOffCommand : public ICommand
     {
-        std::shared_ptr<CeilingFan> ceilingFan;
+        std::shared_ptr<CeilingFan> ceilingFan = nullptr;
 
     public:
         explicit CeilingFanOffCommand(std::shared_ptr<CeilingFan> newCeilingFan);

@@ -8,7 +8,7 @@ namespace command::simpleremote
 {
     class SimpleRemoteControl
     {
-        std::shared_ptr<ICommand> slot;
+        std::shared_ptr<ICommand> slot = nullptr;
 
     public:
         void setCommand(const std::shared_ptr<ICommand>& newCommand);

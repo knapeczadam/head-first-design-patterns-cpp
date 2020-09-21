@@ -9,7 +9,7 @@ namespace command::party
 {
     class HottubOnCommand : public ICommand
     {
-        std::shared_ptr<Hottub> hottub;
+        std::shared_ptr<Hottub> hottub = nullptr;
 
     public:
         explicit HottubOnCommand(std::shared_ptr<Hottub> newHottub);

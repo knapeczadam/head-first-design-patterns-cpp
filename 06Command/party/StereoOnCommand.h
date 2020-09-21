@@ -9,7 +9,7 @@ namespace command::party
 {
     class StereoOnCommand : public ICommand
     {
-        std::shared_ptr<Stereo> stereo;
+        std::shared_ptr<Stereo> stereo = nullptr;
 
     public:
         explicit StereoOnCommand(std::shared_ptr<Stereo> newStereo);

@@ -9,7 +9,7 @@ namespace command::remote
 {
     class HottubOffCommand : public ICommand
     {
-        std::shared_ptr<Hottub> hottub;
+        std::shared_ptr<Hottub> hottub = nullptr;
 
     public:
         explicit HottubOffCommand(std::shared_ptr<Hottub> newHottub);

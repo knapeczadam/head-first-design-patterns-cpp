@@ -7,9 +7,9 @@ namespace command::diner
 {
     class Customer
     {
-        std::shared_ptr<Waitress> waitress;
+        std::shared_ptr<Waitress> waitress = nullptr;
 
-        std::shared_ptr<IOrder> order;
+        std::shared_ptr<IOrder> order = nullptr;
 
     public:
         explicit Customer(std::shared_ptr<Waitress> newWaitress);
