@@ -10,14 +10,14 @@
 #include <iostream>
 #include <memory>
 
-using combining::composite::DuckCall;
-using combining::composite::Goose;
-using combining::composite::GooseAdapter;
-using combining::composite::IQuackable;
-using combining::composite::MallardDuck;
-using combining::composite::QuackCounter;
-using combining::composite::RedheadDuck;
-using combining::composite::RubberDuck;
+using combining::decorator::DuckCall;
+using combining::decorator::Goose;
+using combining::decorator::GooseAdapter;
+using combining::decorator::IQuackable;
+using combining::decorator::MallardDuck;
+using combining::decorator::QuackCounter;
+using combining::decorator::RedheadDuck;
+using combining::decorator::RubberDuck;
 
 void simulate(IQuackable* duck)
 {
@@ -26,18 +26,18 @@ void simulate(IQuackable* duck)
 
 int main()
 {
-    MallardDuck mallardDuck;
-    RedheadDuck redheadDuck;
-    DuckCall duckCall;
-    RubberDuck rubberDuck;
+    std::shared_ptr<IQuackable> mallardDuck = std::make_shared<QuackCounter>(std::make_shared<MallardDuck>());
+    std::shared_ptr<IQuackable> redheadDuck = std::make_shared<QuackCounter>(std::make_shared<RedheadDuck>());
+    std::shared_ptr<IQuackable> duckCall = std::make_shared<QuackCounter>(std::make_shared<DuckCall>());
+    std::shared_ptr<IQuackable> rubberDuck = std::make_shared<QuackCounter>(std::make_shared<RubberDuck>());
     GooseAdapter gooseDuck{std::make_shared<Goose>()};
 
     std::cout << "\nDuck Simulator: With Decorator" << '\n';
 
-    simulate(&mallardDuck);
-    simulate(&redheadDuck);
-    simulate(&duckCall);
-    simulate(&rubberDuck);
+    simulate(mallardDuck.get());
+    simulate(redheadDuck.get());
+    simulate(duckCall.get());
+    simulate(rubberDuck.get());
     simulate(&gooseDuck);
 
     std::cout << "The ducks quacked " << QuackCounter::getQuacks() << " times" << '\n';
