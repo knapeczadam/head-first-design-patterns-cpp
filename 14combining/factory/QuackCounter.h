@@ -4,7 +4,7 @@
 
 #include <memory>
 
-namespace combining::decorator
+namespace combining::factory
 {
     class QuackCounter : public IQuackable
     {

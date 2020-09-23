@@ -10,7 +10,7 @@ namespace combining::decorator
 {
     class GooseAdapter : public IQuackable
     {
-        std::shared_ptr<Goose> goose;
+        std::shared_ptr<Goose> goose = nullptr;
 
     public:
         explicit GooseAdapter(std::shared_ptr<Goose> newGoose);

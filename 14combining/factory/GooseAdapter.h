@@ -6,7 +6,7 @@
 #include <memory>
 #include <ostream>
 
-namespace combining::adapter
+namespace combining::factory
 {
     class GooseAdapter : public IQuackable
     {
