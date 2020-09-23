@@ -17,9 +17,9 @@ namespace adapter::ducks
 
     void DuckAdapter::fly()
     {
-        std::random_device seed{};
-        std::mt19937 engine{seed()};
-        std::uniform_int_distribution<> dis{0, 4};
+        static std::random_device seed{};
+        static std::mt19937 engine{seed()};
+        static std::uniform_int_distribution<> dis{0, 4};
         int x{dis(engine)};
         if (x == 0)
         {
