@@ -25,3 +25,4 @@
 1. BO - <b>State</b>: allow an object to alter its behavior when its internal state changes. The object will appear to change its class.
 1. SO - <b>Proxy</b>: provide a surrogate or placeholder for another object to control access to it.
 1. XX - <b>Anti-Pattern</b>: tells you how to go from a problem to a BAD solution.
+1. SO - <b>Bridge</b>: use the Bridge Pattern to vary not only your implementations, but also your abstractions.
