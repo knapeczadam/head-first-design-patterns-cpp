@@ -9,7 +9,7 @@ namespace combining::observer
 {
     class RubberDuck : public IQuackable
     {
-        std::shared_ptr<Observable> observable;
+        std::shared_ptr<Observable> observable = nullptr;
 
     public:
         RubberDuck();

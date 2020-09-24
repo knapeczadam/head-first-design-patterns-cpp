@@ -17,8 +17,6 @@ namespace combining::observer
 
         friend std::ostream& operator<<(std::ostream& os, const IQuackObservable& observable);
 
-        friend std::ostream& operator<<(std::ostream& os, const IQuackObservable* observable);
-
         virtual void toString(std::ostream& os) const = 0;
     };
 }
