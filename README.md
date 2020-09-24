@@ -13,8 +13,8 @@
 1. BO - <b>Observer</b>: defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
 1. SO - <b>Decorator</b>: attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
 1. Factory
-    2. CO - <b>Abstract Factory</b>: provide an interface for creating families of related or dependent objects without specifying their concrete classes.
-    2. CC - <b>Factory Method</b>: define an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to the subclasses.
+    1. CO - <b>Abstract Factory</b>: provide an interface for creating families of related or dependent objects without specifying their concrete classes.
+    1. CC - <b>Factory Method</b>: define an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to the subclasses.
 1. CO - <b>Singleton</b>: ensure a class only has one instance and provide a global point of access to it.
 1. BO - <b>Command</b>: encapsulates a request as an object, thereby letting you parameterize clients with different requests, queue or log requests, and support undoable operations.
 1. SC - <b>Adapter</b>: converts the interface of a class into another interface clients expect. Lets classes work together that couldn't otherwise because of incompatible interfaces.
