@@ -16,7 +16,7 @@ namespace combining::composite
 
     std::ostream& operator<<(std::ostream& os, const GooseAdapter& gooseAdapter)
     {
-        os << "Goose pretending to be a DucK" << '\n';
+        os << "Goose pretending to be a Duck";
         return os;
     }
 }

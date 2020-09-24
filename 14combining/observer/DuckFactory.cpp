@@ -5,7 +5,7 @@
 #include "RedheadDuck.h"
 #include "RubberDuck.h"
 
-namespace combining::factory
+namespace combining::observer
 {
     std::shared_ptr<IQuackable> DuckFactory::createMallardDuck()
     {
