@@ -26,3 +26,4 @@
 1. SO - <b>Proxy</b>: provide a surrogate or placeholder for another object to control access to it.
 1. XX - <b>Anti-Pattern</b>: tells you how to go from a problem to a BAD solution.
 1. SO - <b>Bridge</b>: use the Bridge Pattern to vary not only your implementations, but also your abstractions.
+1. CO - <b>Builder</b>: use the Builder Pattern to encapsulate the construction of a product and allow it to be constructed in steps.

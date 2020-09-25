@@ -10,9 +10,10 @@ namespace bridge::remote
 {
     class RemoteControl
     {
-        std::shared_ptr<TV> tv;
+        std::shared_ptr<TV> tv = nullptr;
 
-        std::shared_ptr<TVFactory> tvFactory;
+        std::shared_ptr<TVFactory> tvFactory = nullptr;
+
     public:
         explicit RemoteControl(std::shared_ptr<TVFactory> newTVFactory);
 
