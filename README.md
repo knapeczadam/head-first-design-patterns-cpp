@@ -7,7 +7,7 @@
 - thread safety
 - passing smart pointers by value/reference
 - missing patterns
-- RVO
+- Copy policy
 - memory leak/optimization
 
 ### Design Patterns
