@@ -24,6 +24,9 @@
 1. SO - <b>Composite</b>: compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.
 1. BO - <b>State</b>: allow an object to alter its behavior when its internal state changes. The object will appear to change its class.
 1. SO - <b>Proxy</b>: provide a surrogate or placeholder for another object to control access to it.
+1. XX - <b>Compound</b>: combines two or more patterns into a solution that solves a recurring or general problem. 
+1. XX - <b>Model-view-controller</b>: is a software design pattern commonly used for developing user interfaces that divides the related program logic into three interconnected elements.
 1. XX - <b>Anti-Pattern</b>: tells you how to go from a problem to a BAD solution.
 1. SO - <b>Bridge</b>: use the Bridge Pattern to vary not only your implementations, but also your abstractions.
 1. CO - <b>Builder</b>: use the Builder Pattern to encapsulate the construction of a product and allow it to be constructed in steps.
+1. SO - <b>Flyweight</b>: use the Flyweight Pattern when one instance of a class can be used to provide many "virtual instances".
