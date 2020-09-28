@@ -7,6 +7,8 @@
 - thread safety
 - passing smart pointers by value/reference
 - missing patterns
+- RVO
+- memory leak/optimization
 
 ### Design Patterns
 1. BO - <b>Strategy</b>: defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it. 
@@ -30,3 +32,4 @@
 1. SO - <b>Bridge</b>: use the Bridge Pattern to vary not only your implementations, but also your abstractions.
 1. CO - <b>Builder</b>: use the Builder Pattern to encapsulate the construction of a product and allow it to be constructed in steps.
 1. SO - <b>Flyweight</b>: use the Flyweight Pattern when one instance of a class can be used to provide many "virtual instances".
+1. CO - <b>Prototype</b>: use the Prototype pattern when creating an instance of a given class is either expensive or complicated.
